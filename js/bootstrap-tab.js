@@ -17,6 +17,7 @@
  * limitations under the License.
  * ======================================================== */
 
+define(["jquery"], function (jQuery) {
 
 !function ($) {
 
@@ -141,4 +142,6 @@
     $(this).tab('show')
   })
 
-}(window.jQuery);
+}(jQuery);
+
+});
