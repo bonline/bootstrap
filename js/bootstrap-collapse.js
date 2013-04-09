@@ -18,6 +18,8 @@
  * ============================================================ */
 
 
+define(["jquery"], function (jQuery) {
+
 !function ($) {
 
   "use strict"; // jshint ;_;
@@ -164,4 +166,6 @@
     $(target).collapse(option)
   })
 
-}(window.jQuery);
+}(jQuery);
+
+});
