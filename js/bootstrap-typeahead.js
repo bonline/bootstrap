@@ -17,6 +17,7 @@
  * limitations under the License.
  * ============================================================ */
 
+define(["jquery"], function (jQuery) {
 
 !function($){
 
@@ -320,4 +321,6 @@
     $this.typeahead($this.data())
   })
 
-}(window.jQuery);
+}(jQuery);
+
+});
