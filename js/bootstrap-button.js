@@ -17,6 +17,7 @@
  * limitations under the License.
  * ============================================================ */
 
+define(["jquery"], function (jQuery) {
 
 !function ($) {
 
@@ -102,4 +103,6 @@
     $btn.button('toggle')
   })
 
-}(window.jQuery);
+}(jQuery);
+
+});
