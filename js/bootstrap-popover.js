@@ -17,7 +17,7 @@
  * limitations under the License.
  * =========================================================== */
 
-define(["jquery"], function (jQuery) {
+define(["jquery", "bootstrap-tooltip"], function (jQuery) {
 
 !function ($) {
 
