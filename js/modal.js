@@ -7,7 +7,24 @@
  * ======================================================================== */
 
 
-+function ($) {
+(function (root, factory) {
+
+  'use strict';
+
+  // CommonJS module is defined
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = factory(require('jquery'));
+  }
+  // AMD module is defined
+  else if (typeof define === 'function' && define.amd) {
+    define(['jquery'], function ($) {
+      return factory ($);
+    });
+  } else {
+    factory(root.jQuery);
+  }
+
+}(this, function ($) {
   'use strict';
 
   // MODAL CLASS DEFINITION
@@ -336,4 +353,4 @@
     Plugin.call($target, option, this)
   })
 
-}(jQuery);
+}));
