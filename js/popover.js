@@ -17,7 +17,7 @@
   }
   // AMD module is defined
   else if (typeof define === 'function' && define.amd) {
-    define(['jquery'], function ($) {
+    define(['jquery', 'bootstrap-tooltip'], function ($) {
       return factory ($);
     });
   } else {
